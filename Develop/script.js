@@ -26,7 +26,3 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-const lowerCase = "qwertyuiooplkjhgfdsazxcvbnm"
-const uperCase = "QWERTYUIOPLKJHGFDSAZXCVBNM"
-const numbers  = "123456789"
-const symbols = "!@#$%^&*()"
