@@ -17,7 +17,7 @@ function generatePassword () {
 //* if statement in case user choses lower or higher numbers
     if (characterLength < 8 || characterLength > 128)  {
         alert("Please choose from 8 to 128 characters")   
-        return generatePassword()
+        generatePassword()
     } 
     
 //* variables for user choices for characters
@@ -28,7 +28,7 @@ function generatePassword () {
 //* if statement in case user doesn't choose none of the characters
 if (!upperChoice && !lowerChoice && !numberChoice && !symbolChoice) {
     alert("please choose at least one character")
-    return generatePassword()
+    generatePassword()
 } 
 //* adding characters into array based on user choices
 if (upperChoice) {
@@ -46,14 +46,12 @@ if (symbolChoice) {
 //* var loop to count user chosen length and method for choosing random letters
     
 let result = ""
-  for (i = 0; i < characterLength; i++) {
+for (i = 0; i < characterLength; i++) {
   let random = Math.floor(Math.random() * choiceCharacters.length)
-  result += choiceCharacters[random]
-  }
+result += choiceCharacters[random]
+}
 
     return result
-
-   
 
 
 }
