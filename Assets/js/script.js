@@ -1,10 +1,10 @@
 // Assignment Code
 const generateBtn = document.querySelector("#generate");
 //* arrays to hold all numbers letters and symbols for the password
-let upperCase =[ "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" ]
-let lowerCase = [ "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" ]
-let numbers = [ "0","1","2","3","4","5","6","7","8","9"]
-let symbols = [ "!","@","#","$","%","^","&","*",] 
+const upperCase =[ "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" ]
+const lowerCase = [ "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" ]
+const numbers = [ "0","1","2","3","4","5","6","7","8","9"]
+const symbols = [ "!","@","#","$","%","^","&","*",] 
 //* empty array to hold user choices after picking
 let choiceCharacters = []
 let characterLength = []
@@ -20,7 +20,7 @@ function generatePassword () {
         generatePassword()
     } 
     
-//* variables for user choices for characters
+//* variables for user choices of characters
     let upperChoice = confirm("Do you want your password to include uppercase letters?")   
     let lowerChoice = confirm("Do you want your password to include lowercase letters?") 
     let numberChoice = confirm("Do you want your password to include numbers? ") 
